@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. If you use its design, please also cite SLIM (Rasmussen Lab)."
+type: software
+title: "SuperSLIM: a compact NumPy-only predictor of transcriptome responses to gene perturbations"
+authors:
+  - family-names: Kumakura
+    given-names: Daiki
+    orcid: "https://orcid.org/0000-0001-9859-0720"
+doi: "10.5281/zenodo.24393778"
+version: "0.4.0"
+date-released: "2026-11-21"
+repository-code: "https://github.com/DaikiKumakura/superslim"
+license: MIT
+abstract: >-
+  A Python package that loads a compact SuperSLIM model file and predicts the mean transcriptome response to knocking down a gene in learned cell systems, using only NumPy. It is a compact descendant of SLIM and is not affiliated with the SLIM authors.
+keywords:
+  - "Perturb-seq"
+  - "CRISPRi"
+  - "perturbation response"
+  - "Python"
+references:
+  - type: software
+    title: "SLIM"
+    authors:
+      - name: "Rasmussen Lab"
+    url: "https://github.com/RasmussenLab/SLIM"
+    license: MIT

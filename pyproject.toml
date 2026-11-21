@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "superslim"
+version = "0.4.0"
+description = "Compact NumPy-only predictor of mean transcriptome responses to gene perturbations in learned cell systems"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Daiki Kumakura" }]
+dependencies = ["numpy>=1.22"]
+keywords = ["Perturb-seq", "CRISPRi", "transcriptomics", "perturbation response", "NumPy"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Homepage = "https://daikikumakura.github.io/software/superslim.html"
+Repository = "https://github.com/DaikiKumakura/superslim"
+Changelog = "https://github.com/DaikiKumakura/superslim/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+superslim = "superslim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

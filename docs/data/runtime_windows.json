@@ -1,0 +1,131 @@
+{
+ "superslim": "0.3.0",
+ "python": "3.12.4",
+ "numpy": "2.2.6",
+ "platform": "Windows-11-10.0.26300-SP0",
+ "cpu_count": 12,
+ "model_bytes": 4172961,
+ "load_ms_median": 303.6629999987781,
+ "peak_memory_mb_after_all_systems": 107.2265625,
+ "systems": {
+  "k562_gwps": {
+   "n_output_genes": 8563,
+   "single_gene_ms_median": 0.36449999606702477,
+   "single_gene_ms_p95": 0.3801849976298399,
+   "batch": {
+    "10": {
+     "genes_per_second": 9299.730224031287,
+     "output_values_mb": 0.32665252685546875
+    },
+    "100": {
+     "genes_per_second": 14497.165821739729,
+     "output_values_mb": 3.2665252685546875
+    },
+    "1000": {
+     "genes_per_second": 15045.5353103526,
+     "output_values_mb": 32.665252685546875
+    }
+   }
+  },
+  "hct116": {
+   "n_output_genes": 14685,
+   "single_gene_ms_median": 0.9725999989314005,
+   "single_gene_ms_p95": 1.1919150085304862,
+   "batch": {
+    "10": {
+     "genes_per_second": 2830.8563290256534,
+     "output_values_mb": 0.5601882934570312
+    },
+    "100": {
+     "genes_per_second": 8601.040728846327,
+     "output_values_mb": 5.6018829345703125
+    },
+    "1000": {
+     "genes_per_second": 11143.638152157322,
+     "output_values_mb": 56.018829345703125
+    }
+   }
+  },
+  "hek293t": {
+   "n_output_genes": 14685,
+   "single_gene_ms_median": 0.8902999979909509,
+   "single_gene_ms_p95": 1.150444998347666,
+   "batch": {
+    "10": {
+     "genes_per_second": 2302.078769373822,
+     "output_values_mb": 0.5601882934570312
+    },
+    "100": {
+     "genes_per_second": 7701.490235586995,
+     "output_values_mb": 5.6018829345703125
+    },
+    "1000": {
+     "genes_per_second": 10840.402179269964,
+     "output_values_mb": 56.018829345703125
+    }
+   }
+  },
+  "cd4_rest": {
+   "n_output_genes": 6089,
+   "single_gene_ms_median": 0.3165499947499484,
+   "single_gene_ms_p95": 0.38719001022400323,
+   "batch": {
+    "10": {
+     "genes_per_second": 3511.112666076715,
+     "output_values_mb": 0.23227691650390625
+    },
+    "100": {
+     "genes_per_second": 16349.21930360741,
+     "output_values_mb": 2.3227691650390625
+    },
+    "1000": {
+     "genes_per_second": 21427.132758836557,
+     "output_values_mb": 23.227691650390625
+    }
+   }
+  },
+  "cd4_stim8hr": {
+   "n_output_genes": 6089,
+   "single_gene_ms_median": 0.318199978210032,
+   "single_gene_ms_p95": 0.3670250051072798,
+   "batch": {
+    "10": {
+     "genes_per_second": 6557.377050581942,
+     "output_values_mb": 0.23227691650390625
+    },
+    "100": {
+     "genes_per_second": 15490.426916756674,
+     "output_values_mb": 2.3227691650390625
+    },
+    "1000": {
+     "genes_per_second": 20018.857760781364,
+     "output_values_mb": 23.227691650390625
+    }
+   }
+  },
+  "cd4_stim48hr": {
+   "n_output_genes": 6089,
+   "single_gene_ms_median": 0.31540000054519624,
+   "single_gene_ms_p95": 0.3451950105954892,
+   "batch": {
+    "10": {
+     "genes_per_second": 7202.535254697609,
+     "output_values_mb": 0.23227691650390625
+    },
+    "100": {
+     "genes_per_second": 15886.885387682234,
+     "output_values_mb": 2.3227691650390625
+    },
+    "1000": {
+     "genes_per_second": 21959.92313932586,
+     "output_values_mb": 23.227691650390625
+    }
+   }
+  }
+ },
+ "determinism": {
+  "repeat_identical": true,
+  "reload_identical": true,
+  "finite": true
+ }
+}

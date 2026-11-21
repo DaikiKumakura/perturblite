@@ -1,0 +1,17 @@
+# Manual PyPI publishing with trusted publishing (no token is stored). It works only after the PyPI project `superslim`
+# has a Trusted Publisher entry for this repository and workflow (owner DaikiKumakura, repository superslim, workflow publish-pypi.yml, environment pypi).
+name: publish-pypi
+on: workflow_dispatch
+jobs:
+  publish:
+    runs-on: ubuntu-22.04
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build && python -m build
+      - uses: pypa/gh-action-pypi-publish@release/v1

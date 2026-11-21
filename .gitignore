@@ -1,0 +1,7 @@
+__pycache__/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+# Model files derive from third-party data with mixed terms; never commit them (see docs/DATA_LICENSES.md)
+*.npz
